@@ -1,19 +1,33 @@
 {
   "name": "comp308-lesson3",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "engines": {
     "node": ">=6.0.0",
-    "npm": ">= 3.5.0"
+    "npm": ">=3.5.0"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  }
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "use **`npm install`** to install your dependencies",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamie1x/comp308-lesson3.git"
+  },
+  "author": "Jamie Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamie1x/comp308-lesson3/issues"
+  },
+  "homepage": "https://github.com/Jamie1x/comp308-lesson3#readme"
 }
