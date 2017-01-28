@@ -1,26 +1,21 @@
-//
-//comments on toms version
-//
-let connect = require('connect');
-//let http = require('http');
- 
-let app = connect();
+let express = require('express');
+let app = express();
+
+// create the port constant
 const port = 3000;
 
+// start listening on the port
 app.listen(port);
-console.log(`server listening at port: ${port}`);
+console.log(`Server started at http://localhost:${port}`);
 
-//hello route
+// second route is '/hello'
 app.use('/hello', (req, res, next) => {
-  res.setHeader('content-type', 'text/plain');
-  res.end("hello");
-  next();
+  res.send("Hello, World!");
 });
 
-//main route for root
+// first route is '/' - root of my website
 app.use('/', (req, res, next) => {
-  res.setHeader('content-type', 'text/plain');
-  res.end("welcome");
-  next();
+  res.send("Welcome!");
 });
 
+module.exports = app;
