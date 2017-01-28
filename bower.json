@@ -1,0 +1,22 @@
+{
+  "name": "comp308-lesson3",
+  "description": "use **`npm install`** to install your dependencies",
+  "main": "server.js",
+  "authors": [
+    "Jamie Kennedy"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Jamie1x/comp308-lesson3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
